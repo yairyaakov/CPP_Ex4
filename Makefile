@@ -1,6 +1,10 @@
+#207723198
+# yair852258@gmail.com
+
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 LDFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
+VALGRIND_FLAGS=-v --leak-check=full --show-leak-kinds=all --error-exitcode=99
 
 # Default target
 all: main test
@@ -23,6 +27,9 @@ tree: main
 
 runtest: test
 	./test
+
+valgrind: main test
+	valgrind --tool=memcheck $(VALGRIND_FLAGS) ./test
 
 # Clean target
 clean:

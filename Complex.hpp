@@ -1,12 +1,9 @@
-//
-// Created by vboxuser on 7/9/24.
-//
-
+//207723198
+// yair852258@gmail.com
 
 #ifndef COMPLEX_H
 #define COMPLEX_H
 
-#include <iostream>
 #include <cmath>
 
 using namespace std;

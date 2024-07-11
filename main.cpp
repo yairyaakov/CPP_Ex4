@@ -1,7 +1,9 @@
+//207723198
+// yair852258@gmail.com
+
 #include <iostream>
 #include "Node.hpp"
 #include "Tree.hpp"
-#include <SFML/Graphics.hpp>
 
 int main()
 {
@@ -67,7 +69,7 @@ int main()
         cout << node->get_value() << " ";
     } // prints: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6
 
-    tree.print();
+    //tree.print();
 
 
     Tree<double> three_ary_tree(3); // 3-ary tree
@@ -134,7 +136,7 @@ int main()
     } // prints: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6
 
     cout<<"\n";
-    three_ary_tree.print();
+    // three_ary_tree.print();
 
     return 0;
 }

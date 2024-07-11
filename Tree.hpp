@@ -79,9 +79,7 @@ public:
             throw invalid_argument("This node and this tree have a different maximum number of children.");
         }
 
-        Node<T>* parent = find_node(root, parentNode.get_value());
-
-        if (parent)
+        if (Node<T>* parent = find_node(root, parentNode.get_value()))
         {
             // Initialize child node with the maximum children of each node in the tree
             Node<T>* child = new Node<T>(childNode.get_value(), this->max_children);
